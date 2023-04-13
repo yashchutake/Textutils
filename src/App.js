@@ -1,15 +1,15 @@
 import './App.css';
 import Navbar from './Components/Navbar';
 import Textform from './Components/Textform';
-import About from './Components/About';
+// import About from './Components/About';
 import React, { useState } from 'react';
 import Alert from './Components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 
 
@@ -66,21 +66,21 @@ function App() {
         <About/>
       </div> */}
 
-      <Router>
+      {/* <Router> */}
       <Navbar title="TextUtils" mode={mode} toogleMode={toogleMode} />
       <Alert alert={alert} />
       <div className="container my-3">
-      <Switch>
+      {/* <Switch>
         <Route extact path="/about">
             <About />
-        </Route>
+        </Route> */}
 
-        <Route extact path="/">
+        {/* <Route extact path="/"> */}
             <Textform showAlert={showAlert} heading="Enter Text To Analyze Below" mode={mode} />
-        </Route>
-      </Switch>
+        {/* </Route> */}
+      {/* </Switch> */}
       </div>
-      </Router>
+      {/* </Router> */}
 
     </>
 
